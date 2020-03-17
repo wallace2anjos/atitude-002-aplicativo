@@ -101,6 +101,7 @@ background-size: cover;
 color: #ffffff;
 }
 
+
 .bg-android{
 background-image:url('https://i.ibb.co/6mgfw4f/android.png');
 background-color: #f4f4f4;
@@ -118,6 +119,7 @@ background-position:center center;
 background-size: cover;
 color: #ffffff;
 }
+
 .btn-secondary {
     color: #fff;
     background-color: #1c1c1b;
@@ -151,7 +153,7 @@ color: #ffffff;
           <div class="position-relative overflow-hidden p-3 p-md-5 my-0 text-center">
             <div class="col-md-5 p-lg-5 mx-auto my-5" style="z-index:1;">
               <h1 class="display-4 font-weight-normal ">Baixe o nosso app e fique por dentro de tudo que acontece em nossa Igreja </h1>
-              <p class="lead font-weight-normal ">Observe a versão correta e instale no seu aplicativo </p>
+              <p class="lead font-weight-normal ">Observe a versão correta e instale no seu aplicativo</p>
               
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -160,66 +162,37 @@ color: #ffffff;
           
           <div class="d-md-flex flex-md-equal w-100 my-0 pl-md-3">
 
-            <div class="lift bg-ios mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div id="ios" class="lift bg-ios col-lg-6 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
               <div class="my-3 p-3">
                 <h1 class="display-3">iPhone e iPad</h1>
                 <p class="lead">Clique no botão abaixo para ir a AppStore</p>
               </div>
-              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                <p class="lead"></p>
-                  <a href="#" class="btn btn-lg btn-secondary my-5"><i class="fab fa-apple"></i> Baixe na Apple Store</a>
+              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;">
+                  <a href="https://play.google.com/store/apps/details?id=br.com.inchurch.iba" class="btn btn-xl btn-secondary my-5 rounded-pill"><i class="fab fa-apple"></i> Baixe na Apple Store</a>
               </div>
             </div>
             
-            <div class="lift bg-android mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div id="ios" class="lift bg-android col-lg-6 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
               <div class="my-3 py-3">
                 <h1 class="display-3">Android</h1>
                 <p class="lead">Clique no botão abaixo para ir a PlayStore</p>
               </div>
-              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                <a href="#" class="btn btn-lg btn-secondary my-5"><i class="fab fa-google-play"></i> Baixe no Goolge Play</a>
+              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;">
+                <a href="https://apps.apple.com/us/app/ibatitude-iba/id1459558832" class="btn btn-xl btn-secondary my-5 rounded-pill"><i class="fab fa-google-play"></i> Baixe no Goolge Play</a>
               </div>
             </div>
 
           </div>
+
+          
         
         </main>
     </div>
     <div id="layoutDefault_footer"></div>
-</div>
-
-<script>
-  function getMobileOperatingSystem() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
-  {
-    return 'iOS';
-    window.alert('vc está em um ios')
-  }
-  else if( userAgent.match( /Android/i ) )
-  {
-    return 'Android';
-    window.alert('vc está em um android')
-  }
-  else
-  {
-    window.alert('vc está em um pc')
-    return 'unknown';
-  }
-}
+  </div>
 
 
-  
-    AOS.init({
-        disable: 'mobile',
-        duration: 600,
-        once: true
-    });
-</script>
 
-  
-  
 
   <!-- /Div: Wrapper scrolljs -->
   <!--
@@ -241,7 +214,6 @@ color: #ffffff;
   
   <!-- FLICKITY DRAG SWIPE CAROULSEL FREESCROLL -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
-
 
   <!--  SCRIPT scrolljs 
   <script type="text/javascript" src="js/jquery.scrollbar.js"></script>
@@ -278,6 +250,14 @@ if ( window.addEventListener ) {
     window.attachEvent('onload', sendDocHeightMsg);
 }
   </script>
+  <script>
+    AOS.init({
+        disable: 'mobile',
+        duration: 600,
+        once: true
+    });
+  </script>
+  
     
 </body>
 </html>

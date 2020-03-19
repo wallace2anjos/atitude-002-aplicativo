@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
-  <link rel="stylesheet" href="css/style-padrao.css">
+  <!-- <link rel="stylesheet" href="css/style-padrao.css"> -->
   <!-- ESTILOS DO STARTBOOTSTRAP -->
   <!-- HEAD SCRIPTS -->
   <link href="https://getbootstrap.com/docs/4.4/examples/product/product.css" rel="stylesheet">
@@ -51,43 +51,54 @@
   &noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
+  
+</head>
+<body>
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
+<!--
+  --------------------------------------
+  -------------------------------------- INÍCIO DO TEMPLATE
+  --------------------------------------
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> 
+<style>
+body, .page-section{
+  background:linear-gradient(40deg,#ff4a2d,#ff963c,#ff7500)!important;
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
     }
-    .text-light{
-      color:#ffffff;
-      }
+  }
+  .text-light{
+    color:#ffffff;
     }
-    
-    .bg-dark-atitude {
-    background-color: #1c1c1b !important;
-    }
-    .bg-light {
-    background-color: #f4f4f4 !important;
+  }
+  
+
+  .bg-light {
+  background-color: #f4f4f4 !important;
 }
 .bg-ios{
-  background-image: url(img/apple.png);
-    background-color: #313131;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 50%;
-    border-radius: 10px;
-    transition: all 200ms linear;
+background-image: url('https://i.ibb.co/dLZV4mG/apple.png');
+  background-color: #313131;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 50%;
+  border-radius: 10px;
+  transition: all 200ms linear;
 }
 .bg-ios:hover{
-background-image:url('img/apple.png');
+background-image:url('https://i.ibb.co/dLZV4mG/apple.png');
 background-color: #ff7500;
 background-repeat:no-repeat;
 background-position:left center;
@@ -97,7 +108,7 @@ color: #ffffff;
 
 
 .bg-android{
-background-image:url('img/android.png');
+background-image:url('https://i.ibb.co/6mgfw4f/android.png');
 background-color: #313131;
 background-repeat:no-repeat;
 background-position:right center;
@@ -106,7 +117,7 @@ border-radius: 10px;
 transition: all 200ms linear;
 }
 .bg-android:hover{
-background-image:url('img/android.png');
+background-image:url('https://i.ibb.co/6mgfw4f/android.png');
 background-color: #ff7500;
 background-repeat:no-repeat;
 background-position:right center;
@@ -115,83 +126,55 @@ color: #ffffff;
 }
 
 .btn-secondary {
-    color: #fff;
-    background-color: #1c1c1b;
-    border-color: #1c1c1b;
+  color: #fff;
+  background-color: #1c1c1b;
+  border-color: #1c1c1b;
 }
 .btn-secondary:hover{
-  color: #fff;
-  background-color: #ff7500;
-  border-color: #ff7500;
+color: #fff;
+background-color: #ff7500;
+border-color: #ff7500;
 }
 .btn-secondary:focus,
 .btn-secondary:active{
-    color: #fff;
-    background-color: #bb5700!important;
-    border-color: #ff7500!important;
-    box-shadow: 0 0 0 0.2rem rgba(255, 117, 0, 0.502)!important;
+  color: #fff;
+  background-color: #bb5700!important;
+  border-color: #ff7500!important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 117, 0, 0.502)!important;
+}
+.page-section, .timeline-box {
+  padding: 80px 0;
+  background: #212121;
+  color: #fff;
 }
 
-  </style>
-</head>
+</style>
+<div id="layoutDefault">
+  <div id="layoutDefault_content">
+      <main>
 
-<body class="bg-dark-atitude">
-  <!--
-  --------------------------------------
-  -------------------------------------- INÍCIO DO TEMPLATE
-  --------------------------------------
-  -->
-  <div id="layoutDefault">
-    <div id="layoutDefault_content">
-        <main>
-          <div class="position-relative overflow-hidden p-3 p-md-5 my-0 text-center">
-            <div class="col-md-5 p-lg-5 mx-auto my-5" style="z-index:1;">
-              <h1 class="display-4 font-weight-normal ">Baixe o nosso app e fique por dentro de tudo que acontece em nossa Igreja </h1>
-              <p class="lead font-weight-normal ">Observe a versão correta e instale no seu aplicativo</p>
-              
-            </div>
-            <div class="product-device shadow-sm d-none d-md-block" style="opacity: 0.5;"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        <div class="position-relative overflow-hidden p-3 p-md-5 my-0 text-center">
+          <div class="p-lg-5 mx-auto my-5" style="z-index:1;">
+            <h1 class="display-5 font-weight-normal">Baixe o App da Igreja Batista Atitude!</h1>
+            <h3 class="lead font-weight-normal text-light">Fique por dentro de tudo que acontece em nossa Igreja! Escolha a versão compativel com seu smartphone</h3>
+            <a href="https://apps.apple.com/us/app/ibatitude-iba/id1459558832" class="btn btn-lg btn-secondary mt-5 rounded-pill text-light"><i class="fab fa-google-play"></i> Goolge Play</a>
+            <a href="https://play.google.com/store/apps/details?id=br.com.inchurch.iba" class="btn btn-lg btn-secondary mt-5 rounded-pill text-light"><i class="fab fa-apple"></i> Apple Store</a>
           </div>
-          
-          <div class="d-md-flex flex-md-equal w-100 my-0 pl-md-3">
-
-            <div id="ios" class="lift bg-ios col-lg-6 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 p-3">
-                <h1 class="display-3">iPhone e iPad</h1>
-                <p class="lead">Clique no botão abaixo para ir a AppStore</p>
-              </div>
-              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;">
-                  <a href="https://play.google.com/store/apps/details?id=br.com.inchurch.iba" class="btn btn-lg btn-secondary my-5 rounded-pill"><i class="fab fa-apple"></i> Baixe na Apple Store</a>
-              </div>
-            </div>
-            
-            <div id="ios" class="lift bg-android col-lg-6 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 py-3">
-                <h1 class="display-3">Android</h1><small style="font-size: 1em;">(Samsumg, LG, Xiaomi, Motorola, Asus, Lenovo, ...)</small>
-                <p class="lead">Clique no botão abaixo para ir a PlayStore</p>
-              </div>
-              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 200px; border-radius: 21px 21px 0 0;">
-                <a href="https://apps.apple.com/us/app/ibatitude-iba/id1459558832" class="btn btn-lg btn-secondary my-5 rounded-pill"><i class="fab fa-google-play"></i> Baixe no Goolge Play</a>
-              </div>
-            </div>
-
-          </div>
-
-          
-        
-        </main>
-    </div>
-    <div id="layoutDefault_footer"></div>
+          <div class="product-device shadow-sm d-none d-md-block" style="opacity: 0.5;"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+      </main>
   </div>
+  <div id="layoutDefault_footer"></div>
+</div>
 
-  <script>
-    AOS.init({
-        disable: 'mobile',
-        duration: 600,
-        once: true
-    });
-  </script>
+<script>
+  AOS.init({
+      disable: 'mobile',
+      duration: 600,
+      once: true
+  });
+</script>
 
   <!-- /Div: Wrapper scrolljs -->
   <!--
@@ -199,55 +182,17 @@ color: #ffffff;
   -------------------------------------- FINAL DO TEMPLATE
   --------------------------------------
   -->
-  <script src="js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://themes.startbootstrap.com/sb-ui-kit-pro/js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!--  SCRIPTS cdnjs  -->
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-migrate.min.js"></script>
-  <script src="js/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
   <!--  SCRIPTS bootstrap  -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/mdb.min.js"></script>
-  
-  <!--  SCRIPT scrolljs 
-  <script type="text/javascript" src="js/jquery.scrollbar.js"></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($){
-      window.prettyPrint && prettyPrint();
-      $('.wrapper').scrollbar();
-    });
-  </script>
-  -->
-  <!--  SCRIPT capturando a altura  -->
-  <!-- Cross domain iframe resize -->
-  <script type="text/javascript">
-  // Get height of document
-function getDocHeight(doc) {
-    doc = doc || document;
-    // from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
-    var body = doc.body, html = doc.documentElement;
-    var height = Math.max( body.scrollHeight, body.offsetHeight, 
-        html.clientHeight, html.scrollHeight, html.offsetHeight );
-    return height;
-}
-
-// send docHeight onload
-function sendDocHeightMsg(e) {
-    var ht = getDocHeight();
-    parent.postMessage( JSON.stringify( {'docHeight': ht} ), '*' );
-}
-
-// assign onload handler 
-if ( window.addEventListener ) {
-    window.addEventListener('load', sendDocHeightMsg, false);
-} else if ( window.attachEvent ) { // ie8
-    window.attachEvent('onload', sendDocHeightMsg);
-}
-  </script>
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
     
 </body>
 </html>
